@@ -1,0 +1,7 @@
+{
+  "name": "jokar-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

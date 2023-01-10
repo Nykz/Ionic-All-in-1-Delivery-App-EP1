@@ -1,0 +1,90 @@
+ion-header {
+    ion-toolbar {
+        ion-avatar {
+            background: var(--ion-color-light);
+            height: 30px;
+            width: 30px;
+        }
+        ion-title {
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            max-width: 40vh;
+            margin-left: 1vh;
+            ion-label {
+                ion-text {
+                    font-size: 0.7rem;
+                }
+                p {
+                    color: var(--ion-color-dark);
+                    font-size: 1rem;
+                    font-weight: bold;
+                    ion-icon {
+                        font-size: 1rem;
+                        transform: translateY(3px);
+                    }  
+                }
+            }
+        }
+        ion-buttons[slot=end] {
+            ion-button {
+                ion-badge {
+                    position: absolute;
+                    top: -0.01rem;
+                    margin-left: 1vw;
+                    opacity: 0.9;
+                    font-size: 0.2vh;
+                    padding: 6px!important;
+                    border-radius: 50px;
+                    &~ion-icon {
+                      margin-right: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    .banners {
+        height: 25vh;
+        margin: 10px 0;
+        img {
+            width: 100%;
+            height: 22vh;
+            border-radius: 5px;
+        }
+    }
+
+    div.topic {
+        font-size: 1.3rem;
+        margin: 0 10px;
+    }
+
+    ion-grid {
+        margin: 2vh 10px 0 5px;
+        ion-row {
+            ion-col {
+                padding: 0 !important;
+                ion-card {
+                    border: 0.001vh solid var(--ion-color-medium);
+                    height: 100px;
+                    width: 100%;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    ion-label {
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        margin-top: 5px;
+                    }
+                    ion-thumbnail {
+                        height: 7vh;
+                    }
+                }
+            }
+        }
+    }
+}
